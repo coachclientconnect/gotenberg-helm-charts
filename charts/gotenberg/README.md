@@ -120,6 +120,7 @@ helm upgrade my-release maikumori/gotenberg --install
 | securityContext | object | `{ privileged: false, runAsUser: 1001 }`, except in OpenShift where `runAsUser` is not set. | Define the security context for the container. By default will use upstream recommended values. |
 | service.annotations | object | `{}` | Annotations to add to the service |
 | service.port | int | `80` |  |
+| service.nodePort | int | `` |  |
 | service.type | string | `"ClusterIP"` |  |
 | serviceAccount.annotations | object | `{}` | Annotations to add to the service account |
 | serviceAccount.create | bool | `false` | Specifies whether a service account should be created |
